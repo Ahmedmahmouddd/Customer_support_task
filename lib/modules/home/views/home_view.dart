@@ -1,5 +1,5 @@
 import 'package:customer_support_task/core/theme/app_colors.dart';
-import 'package:customer_support_task/core/constants/app_padding.dart';
+import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_text_styles.dart';
 import 'package:customer_support_task/generated/l10n.dart';
 import 'package:customer_support_task/modules/home/models/home_menu_item.dart';
@@ -27,22 +27,22 @@ class HomeView extends StatelessWidget {
         title: Text(S.of(context).homeMenu, style: AppTextStyles.salmonHeading),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppPadding.horizontalPadding,
-        ),
+        padding: const EdgeInsets.all(AppConstants.horizontalPadding),
         child: GridView.count(
-          physics: const NeverScrollableScrollPhysics(), 
-          shrinkWrap: true, 
+          physics: const NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
           crossAxisCount: 2,
-          crossAxisSpacing: AppPadding.horizontalPadding,
-          mainAxisSpacing: AppPadding.horizontalPadding,
+          crossAxisSpacing: AppConstants.horizontalPadding,
+          mainAxisSpacing: AppConstants.horizontalPadding,
           children: items.map((item) {
             return GestureDetector(
               onTap: () => Get.toNamed(item.route),
               child: Container(
                 decoration: BoxDecoration(
                   color: AppColors.salmon,
-                  borderRadius: BorderRadius.circular(AppPadding.mediumPadding),
+                  borderRadius: BorderRadius.circular(
+                    AppConstants.largePadding,
+                  ),
                 ),
                 child: Center(
                   child: Text(

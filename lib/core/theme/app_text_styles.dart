@@ -23,24 +23,24 @@ class AppTextStyles {
     color: AppColors.terracotta,
   );
 
-  static const body = TextStyle(
+  static const blackBody = TextStyle(
     fontSize: 14,
     fontFamily: 'poppins',
     fontWeight: FontWeight.w500,
     color: AppColors.text,
   );
 
-  static const small = TextStyle(
+  static const greyBody = TextStyle(
+    fontSize: 14,
+    fontFamily: 'poppins',
+    fontWeight: FontWeight.w500,
+    color: AppColors.grey,
+  );
+
+  static const blackSmall = TextStyle(
     fontSize: 12,
     fontFamily: 'poppins',
     fontWeight: FontWeight.w500,
-    color: AppColors.text,
-  );
-
-  static const bold = TextStyle(
-    fontSize: 16,
-    fontFamily: 'poppins',
-    fontWeight: FontWeight.bold,
     color: AppColors.text,
   );
 }

@@ -21,24 +21,27 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        AppBar(
-          automaticallyImplyLeading: false,
-          backgroundColor: AppColors.white,
-          elevation: 0,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: AppColors.black),
-            onPressed: onBack ?? () => Get.back(),
+    return Container(
+      color: AppColors.white,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          AppBar(
+            automaticallyImplyLeading: false,
+            backgroundColor: AppColors.white,
+            elevation: 0,
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back, color: AppColors.black),
+              onPressed: onBack ?? () => Get.back(),
+            ),
+            centerTitle: true,
+            title: Text(title, style: AppTextStyles.salmonHeading),
           ),
-          centerTitle: true,
-          title: Text(title, style: AppTextStyles.salmonHeading),
-        ),
-        Text(subtitle, style: AppTextStyles.blackSubheading),
-        const SizedBox(height: 4),
-        CustomDivider(),
-      ],
+          Text(subtitle, style: AppTextStyles.blackSubheading),
+          const SizedBox(height: 4),
+          CustomDivider(),
+        ],
+      ),
     );
   }
 }

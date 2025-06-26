@@ -94,6 +94,21 @@ class S {
       args: [],
     );
   }
+
+  /// `Send a message`
+  String get sendAmessage {
+    return Intl.message(
+      'Send a message',
+      name: 'sendAmessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `is required`
+  String get isRequired {
+    return Intl.message('is required', name: 'isRequired', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

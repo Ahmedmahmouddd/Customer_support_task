@@ -4,5 +4,7 @@
     "helpFAQ" : "Help & FAQ",
     "contactUs" : "Contact Us",
     "liveChat" : "Live Chat",
-    "iamHereToAssistYou" : "I am here to assist you"
+    "iamHereToAssistYou" : "I am here to assist you",
+    "sendAmessage" : "Send a message",
+    "isRequired" : "is required"
 }

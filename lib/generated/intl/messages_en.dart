@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "iamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
       "I am here to assist you",
     ),
+    "isRequired": MessageLookupByLibrary.simpleMessage("is required"),
     "liveChat": MessageLookupByLibrary.simpleMessage("Live Chat"),
+    "sendAmessage": MessageLookupByLibrary.simpleMessage("Send a message"),
   };
 }

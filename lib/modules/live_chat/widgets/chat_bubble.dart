@@ -1,3 +1,6 @@
+import 'package:customer_support_task/core/constants/app_constants.dart';
+import 'package:customer_support_task/core/theme/app_colors.dart';
+import 'package:customer_support_task/core/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class ChatBubble extends StatelessWidget {
@@ -14,48 +17,28 @@ class ChatBubble extends StatelessWidget {
   final String time;
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: isMe ? Alignment.centerRight : Alignment.centerLeft,
-      child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 4),
-        padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 6.0),
-        constraints: BoxConstraints(
-          maxWidth: MediaQuery.of(context).size.width * 0.7, // Max width
-          minWidth: MediaQuery.of(context).size.width * 0.3,
+    return Column(
+      crossAxisAlignment: isMe
+          ? CrossAxisAlignment.start
+          : CrossAxisAlignment.end,
+      children: [
+        Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: AppConstants.extraLargePadding,
+            vertical: AppConstants.smallPadding,
+          ),
+          constraints: BoxConstraints(
+            maxWidth: MediaQuery.of(context).size.width * 0.7,
+            minWidth: MediaQuery.of(context).size.width * 0.3,
+          ),
+          decoration: BoxDecoration(
+            color: isMe ? AppColors.accent : AppColors.beige,
+            borderRadius: BorderRadius.circular(AppConstants.largePadding),
+          ),
+          child: Text(message, style: AppTextStyles.blackBody),
         ),
-        decoration: BoxDecoration(
-          color: isMe ? Colors.blue[600] : Colors.grey[600],
-          borderRadius: isMe
-              ? const BorderRadius.only(
-                  topLeft: Radius.circular(16),
-                  topRight: Radius.circular(16),
-                  bottomRight: Radius.circular(0),
-                  bottomLeft: Radius.circular(16),
-                )
-              : const BorderRadius.only(
-                  topLeft: Radius.circular(16),
-                  topRight: Radius.circular(16),
-                  bottomRight: Radius.circular(16),
-                  bottomLeft: Radius.circular(0),
-                ),
-        ),
-        child: Column(
-          crossAxisAlignment: isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
-          children: [
-            !isMe
-                ? Text(sender, style: const TextStyle(color: Colors.white, fontSize: 16))
-                : const SizedBox(width: 0),
-            Text(
-              message,
-              style: const TextStyle(color: Colors.white, fontSize: 16),
-            ),
-            Text(
-              time,
-              style: const TextStyle(color: Color.fromARGB(220, 255, 255, 255), fontSize: 10),
-            ),
-          ],
-        ),
-      ),
+        Text("14:02", style: AppTextStyles.blackSmall),
+      ],
     );
   }
 }
