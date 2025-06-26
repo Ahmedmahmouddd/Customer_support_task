@@ -1,4 +1,4 @@
-import 'package:customer_support_task/core/constants/app_colors.dart';
+import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/core/constants/app_padding.dart';
 import 'package:flutter/material.dart';
 

@@ -84,6 +84,16 @@ class S {
   String get liveChat {
     return Intl.message('Live Chat', name: 'liveChat', desc: '', args: []);
   }
+
+  /// `I am here to assist you`
+  String get iamHereToAssistYou {
+    return Intl.message(
+      'I am here to assist you',
+      name: 'iamHereToAssistYou',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

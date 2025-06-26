@@ -26,6 +26,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "customerService": MessageLookupByLibrary.simpleMessage("Customer Service"),
     "helpFAQ": MessageLookupByLibrary.simpleMessage("Help & FAQ"),
     "homeMenu": MessageLookupByLibrary.simpleMessage("Home Menu"),
+    "iamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
+      "I am here to assist you",
+    ),
     "liveChat": MessageLookupByLibrary.simpleMessage("Live Chat"),
   };
 }
