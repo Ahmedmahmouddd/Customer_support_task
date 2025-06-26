@@ -1,3 +1,7 @@
 {
-    
+    "homeMenu" : "Home Menu",
+    "customerService" : "Customer Service",
+    "helpFAQ" : "Help & FAQ",
+    "contactUs" : "Contact Us",
+    "liveChat" : "Live Chat"
 }
