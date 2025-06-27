@@ -18,7 +18,6 @@ class HomeView extends StatelessWidget {
         route: AppRoutes.customerService,
       ),
       HomeMenuItem(label: S.of(context).helpFAQ, route: AppRoutes.helpFaqs),
-      HomeMenuItem(label: S.of(context).contactUs, route: AppRoutes.contactUs),
       HomeMenuItem(label: S.of(context).liveChat, route: AppRoutes.liveChat),
     ];
 

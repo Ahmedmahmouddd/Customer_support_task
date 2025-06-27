@@ -95,6 +95,16 @@ class S {
     );
   }
 
+  /// `Hello! I am here to assist you`
+  String get helloIamHereToAssistYou {
+    return Intl.message(
+      'Hello! I am here to assist you',
+      name: 'helloIamHereToAssistYou',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Send a message`
   String get sendAmessage {
     return Intl.message(
@@ -108,6 +118,46 @@ class S {
   /// `is required`
   String get isRequired {
     return Intl.message('is required', name: 'isRequired', desc: '', args: []);
+  }
+
+  /// `How can we help you?`
+  String get howCanWeHelpYou {
+    return Intl.message(
+      'How can we help you?',
+      name: 'howCanWeHelpYou',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Support`
+  String get support {
+    return Intl.message('Support', name: 'support', desc: '', args: []);
+  }
+
+  /// `Help center`
+  String get helpCenter {
+    return Intl.message('Help center', name: 'helpCenter', desc: '', args: []);
+  }
+
+  /// `General Information`
+  String get generalInformation {
+    return Intl.message(
+      'General Information',
+      name: 'generalInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally.`
+  String get customerServiceText {
+    return Intl.message(
+      'Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally.',
+      name: 'customerServiceText',
+      desc: '',
+      args: [],
+    );
   }
 }
 

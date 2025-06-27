@@ -24,13 +24,27 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
     "customerService": MessageLookupByLibrary.simpleMessage("Customer Service"),
+    "customerServiceText": MessageLookupByLibrary.simpleMessage(
+      "Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally.",
+    ),
+    "generalInformation": MessageLookupByLibrary.simpleMessage(
+      "General Information",
+    ),
+    "helloIamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
+      "Hello! I am here to assist you",
+    ),
+    "helpCenter": MessageLookupByLibrary.simpleMessage("Help center"),
     "helpFAQ": MessageLookupByLibrary.simpleMessage("Help & FAQ"),
     "homeMenu": MessageLookupByLibrary.simpleMessage("Home Menu"),
+    "howCanWeHelpYou": MessageLookupByLibrary.simpleMessage(
+      "How can we help you?",
+    ),
     "iamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
       "I am here to assist you",
     ),
     "isRequired": MessageLookupByLibrary.simpleMessage("is required"),
     "liveChat": MessageLookupByLibrary.simpleMessage("Live Chat"),
     "sendAmessage": MessageLookupByLibrary.simpleMessage("Send a message"),
+    "support": MessageLookupByLibrary.simpleMessage("Support"),
   };
 }

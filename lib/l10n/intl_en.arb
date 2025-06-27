@@ -5,6 +5,12 @@
     "contactUs" : "Contact Us",
     "liveChat" : "Live Chat",
     "iamHereToAssistYou" : "I am here to assist you",
+    "helloIamHereToAssistYou" : "Hello! I am here to assist you",
     "sendAmessage" : "Send a message",
-    "isRequired" : "is required"
+    "isRequired" : "is required",
+    "howCanWeHelpYou" : "How can we help you?",
+    "support" : "Support",
+     "helpCenter" : "Help center",
+    "generalInformation" : "General Information",
+    "customerServiceText" : "Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally."
 }
