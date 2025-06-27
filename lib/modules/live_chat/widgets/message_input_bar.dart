@@ -1,20 +1,18 @@
 import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/generated/l10n.dart';
+import 'package:customer_support_task/modules/live_chat/controllers/live_chat_controller.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/custom_text_field.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/message_input_bar_button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MessageInputBar extends StatelessWidget {
-  const MessageInputBar({
-    super.key,
-     required this.messageController
-  });
-
-  final TextEditingController messageController;
+  const MessageInputBar({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<LiveChatController>();
     return Container(
       decoration: BoxDecoration(
         color: AppColors.beige,
@@ -39,7 +37,7 @@ class MessageInputBar extends StatelessWidget {
             ),
             Expanded(
               child: CustomTextField(
-                myController: messageController,
+                myController: controller.messageController,
                 hint: S.of(context).sendAmessage,
                 obscureField: false,
                 initialObscureText: false,
@@ -51,10 +49,7 @@ class MessageInputBar extends StatelessWidget {
             ),
             MessageInputIconButton(
               iconAsset: "assets/icons/send.svg",
-              onTap: () {
-                // await sendMessage(messageController.text);
-                // messageController.clear();
-              },
+              onTap: controller.sendMessage,
             ),
           ],
         ),

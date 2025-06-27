@@ -37,7 +37,7 @@ class ChatBubble extends StatelessWidget {
           ),
           child: Text(message, style: AppTextStyles.blackBody),
         ),
-        Text("14:02", style: AppTextStyles.blackSmall),
+        Text(time, style: AppTextStyles.blackSmall),
       ],
     );
   }

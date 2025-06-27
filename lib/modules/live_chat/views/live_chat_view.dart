@@ -2,9 +2,12 @@ import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/core/widgets/custom_appbar.dart';
 import 'package:customer_support_task/generated/l10n.dart';
+import 'package:customer_support_task/modules/live_chat/controllers/live_chat_controller.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/chat_bubble.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/message_input_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class LiveChatView extends StatefulWidget {
   const LiveChatView({super.key});
@@ -14,7 +17,7 @@ class LiveChatView extends StatefulWidget {
 }
 
 class _LiveChatViewState extends State<LiveChatView> {
-  final TextEditingController messageController = TextEditingController();
+  final controller = Get.find<LiveChatController>();
 
   @override
   Widget build(BuildContext context) {
@@ -30,43 +33,49 @@ class _LiveChatViewState extends State<LiveChatView> {
           child: Column(
             children: [
               Expanded(
-                // WidgetsBinding.instance.addPostFrameCallback((_) {
-                //   // if (scrollController.hasClients) {
-                //   //   scrollController.jumpTo(0);
-                //   // }
-                // });
-                child: ListView(
-                  reverse: true,
-                  // controller: scrollController,
-                  physics: const BouncingScrollPhysics(),
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppConstants.mediumPadding,
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        mainAxisAlignment: false
-                            ? MainAxisAlignment.start
-                            : MainAxisAlignment.end,
-                        children: [
-                          ChatBubble(
-                            message: 'messageContent',
-                            time: 'time',
-                            isMe: false,
-                            sender: 'senderName',
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                child: Obx(() {
+                  final messages = controller.messages;
+
+                  return ListView.builder(
+                    reverse: true,
+                    itemCount: messages.value.length,
+                    itemBuilder: (_, index) {
+                      final msg = messages.value[index];
+                      final isMe = msg.sender == "Ahmed"; // replace later
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppConstants.mediumPadding,
+                          vertical: 4,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: isMe
+                              ? MainAxisAlignment.end
+                              : MainAxisAlignment.start,
+                          children: [
+                            ChatBubble(
+                              message: msg.message,
+                              sender: msg.sender,
+                              isMe: isMe,
+                              time: _formatTime(msg.time),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  );
+                }),
               ),
-              MessageInputBar(messageController: messageController),
+              const MessageInputBar(),
             ],
           ),
         ),
       ),
     );
+  }
+
+  String _formatTime(DateTime dateTime) {
+    final hour = dateTime.hour.toString().padLeft(2, '0');
+    final minute = dateTime.minute.toString().padLeft(2, '0');
+    return '$hour:$minute';
   }
 }
