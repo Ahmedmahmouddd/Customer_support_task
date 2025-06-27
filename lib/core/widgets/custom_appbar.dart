@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   });
 
   @override
-  Size get preferredSize => const Size.fromHeight(99);
+  Size get preferredSize => const Size.fromHeight(84);
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +30,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             automaticallyImplyLeading: false,
             backgroundColor: AppColors.white,
             elevation: 0,
+            foregroundColor: Colors.transparent,
+            surfaceTintColor: Colors.transparent,
+            shadowColor: Colors.transparent,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back, color: AppColors.black),
               onPressed: onBack ?? () => Get.back(),

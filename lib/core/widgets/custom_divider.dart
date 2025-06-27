@@ -8,6 +8,7 @@ class CustomDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Divider(
+      height: 1,
       indent: AppConstants.horizontalPadding,
       endIndent: AppConstants.horizontalPadding,
       color: AppColors.salmon,

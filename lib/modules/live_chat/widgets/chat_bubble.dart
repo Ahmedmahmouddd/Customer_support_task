@@ -19,8 +19,8 @@ class ChatBubble extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: isMe
-          ? CrossAxisAlignment.start
-          : CrossAxisAlignment.end,
+          ? CrossAxisAlignment.end
+          : CrossAxisAlignment.start,
       children: [
         Container(
           padding: EdgeInsets.symmetric(
@@ -32,7 +32,7 @@ class ChatBubble extends StatelessWidget {
             minWidth: MediaQuery.of(context).size.width * 0.3,
           ),
           decoration: BoxDecoration(
-            color: isMe ? AppColors.accent : AppColors.beige,
+            color: isMe ? AppColors.beige : AppColors.accent,
             borderRadius: BorderRadius.circular(AppConstants.largePadding),
           ),
           child: Text(message, style: AppTextStyles.blackBody),

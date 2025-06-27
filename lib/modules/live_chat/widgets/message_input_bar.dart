@@ -1,7 +1,7 @@
 import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/generated/l10n.dart';
-import 'package:customer_support_task/modules/live_chat/controllers/live_chat_controller.dart';
+import 'package:customer_support_task/modules/live_chat/controller/live_chat_controller.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/custom_text_field.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/message_input_bar_button.dart';
 import 'package:flutter/material.dart';

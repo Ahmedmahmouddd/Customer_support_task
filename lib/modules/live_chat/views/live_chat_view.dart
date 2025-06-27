@@ -2,12 +2,11 @@ import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/core/widgets/custom_appbar.dart';
 import 'package:customer_support_task/generated/l10n.dart';
-import 'package:customer_support_task/modules/live_chat/controllers/live_chat_controller.dart';
+import 'package:customer_support_task/modules/live_chat/controller/live_chat_controller.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/chat_bubble.dart';
 import 'package:customer_support_task/modules/live_chat/widgets/message_input_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class LiveChatView extends StatefulWidget {
   const LiveChatView({super.key});
@@ -35,13 +34,13 @@ class _LiveChatViewState extends State<LiveChatView> {
               Expanded(
                 child: Obx(() {
                   final messages = controller.messages;
-
                   return ListView.builder(
                     reverse: true,
+                    controller: controller.scrollController,
                     itemCount: messages.value.length,
                     itemBuilder: (_, index) {
                       final msg = messages.value[index];
-                      final isMe = msg.sender == "Ahmed"; // replace later
+                      final isMe = msg.sender == "Ahmed";
                       return Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: AppConstants.mediumPadding,

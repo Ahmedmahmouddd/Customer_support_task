@@ -6,6 +6,7 @@ import '../models/message_model.dart';
 class LiveChatController extends GetxController {
   final TextEditingController messageController = TextEditingController();
   final LiveChatRepository _liveChatRepo = LiveChatRepository();
+  final scrollController = ScrollController();
   final messages = Rx<List<MessageModel>>([]);
 
   @override
@@ -13,6 +14,14 @@ class LiveChatController extends GetxController {
     super.onInit();
     _liveChatRepo.getMessagesStream().listen((data) {
       messages.value = data;
+
+      if (scrollController.hasClients) {
+        scrollController.animateTo(
+          0.0,
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.easeOut,
+        );
+      }
     });
   }
 
