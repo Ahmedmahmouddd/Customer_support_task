@@ -47,5 +47,7 @@
     "call" : "Call",
     "gitHub" : "GitHub",
     "linkedIn" : "linkedIn",
-    "whatsapp" : "Whatsapp"
+    "whatsapp" : "Whatsapp",
+    "camera" : "Camera",
+    "gallery" : "Gallery"
 }

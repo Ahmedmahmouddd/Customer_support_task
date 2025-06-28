@@ -60,12 +60,14 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "account": MessageLookupByLibrary.simpleMessage("Account"),
     "call": MessageLookupByLibrary.simpleMessage("Call"),
+    "camera": MessageLookupByLibrary.simpleMessage("Camera"),
     "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
     "customerService": MessageLookupByLibrary.simpleMessage("Customer Service"),
     "customerServiceText": MessageLookupByLibrary.simpleMessage(
       "Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally.",
     ),
     "faqs": MessageLookupByLibrary.simpleMessage("FAQs"),
+    "gallery": MessageLookupByLibrary.simpleMessage("Gallery"),
     "general": MessageLookupByLibrary.simpleMessage("General"),
     "generalInformation": MessageLookupByLibrary.simpleMessage(
       "General Information",
