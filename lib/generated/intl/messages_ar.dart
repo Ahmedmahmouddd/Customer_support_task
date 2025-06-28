@@ -59,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "اذهب إلى قسم الخدمات للاطلاع على الحالة والتحديثات.",
     ),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
+    "call": MessageLookupByLibrary.simpleMessage("إتصال"),
     "contactUs": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
     "customerService": MessageLookupByLibrary.simpleMessage("خدمة العملاء"),
     "customerServiceText": MessageLookupByLibrary.simpleMessage(
@@ -67,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "faqs": MessageLookupByLibrary.simpleMessage("الأسئلة الشائعة"),
     "general": MessageLookupByLibrary.simpleMessage("عام"),
     "generalInformation": MessageLookupByLibrary.simpleMessage("معلومات عامة"),
+    "gitHub": MessageLookupByLibrary.simpleMessage("جيتهاب"),
     "helloIamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
       "مرحبًا! أنا هنا لمساعدتك",
     ),
@@ -82,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "أنا هنا لمساعدتك",
     ),
     "isRequired": MessageLookupByLibrary.simpleMessage("مطلوب"),
+    "linkedIn": MessageLookupByLibrary.simpleMessage("لينكدان"),
     "liveChat": MessageLookupByLibrary.simpleMessage("الدردشة المباشرة"),
     "profilePicture": MessageLookupByLibrary.simpleMessage("صورة الملف الشخصي"),
     "profilePictureUpload": MessageLookupByLibrary.simpleMessage(
@@ -119,5 +122,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "uploadYouProfilePicture": MessageLookupByLibrary.simpleMessage(
       "قم برفع صورة ملفك الشخصي",
     ),
+    "whatsapp": MessageLookupByLibrary.simpleMessage("واتساب"),
   };
 }

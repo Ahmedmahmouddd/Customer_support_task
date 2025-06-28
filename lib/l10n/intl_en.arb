@@ -43,5 +43,9 @@
     "q11": "What types of services are supported?",
     "a11": "We support account help, technical support, and order inquiries.",
     "q12": "How long does it take to get a response?",
-    "a12": "Usually within a few minutes via live chat, or up to 24 hours via email."
+    "a12": "Usually within a few minutes via live chat, or up to 24 hours via email.",
+    "call" : "Call",
+    "gitHub" : "GitHub",
+    "linkedIn" : "linkedIn",
+    "whatsapp" : "Whatsapp"
 }

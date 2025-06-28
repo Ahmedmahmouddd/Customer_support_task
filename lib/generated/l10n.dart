@@ -444,6 +444,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Call`
+  String get call {
+    return Intl.message('Call', name: 'call', desc: '', args: []);
+  }
+
+  /// `GitHub`
+  String get gitHub {
+    return Intl.message('GitHub', name: 'gitHub', desc: '', args: []);
+  }
+
+  /// `linkedIn`
+  String get linkedIn {
+    return Intl.message('linkedIn', name: 'linkedIn', desc: '', args: []);
+  }
+
+  /// `Whatsapp`
+  String get whatsapp {
+    return Intl.message('Whatsapp', name: 'whatsapp', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,5 +1,6 @@
 import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_colors.dart';
+import 'package:customer_support_task/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -29,11 +30,17 @@ class MessageInputIconButton extends StatelessWidget {
           backgroundColor: AppColors.white,
           elevation: 0,
         ),
-        child: SvgPicture.asset(
-          iconAsset,
-          color: AppColors.salmon,
-          width: AppConstants.mediumIconSize,
-          height: AppConstants.mediumIconSize,
+        child: Transform(
+          alignment: Alignment.center,
+          transform: (isArabicLocale()
+              ? (Matrix4.identity()..scale(-1.0, 1.0))
+              : Matrix4.identity()),
+          child: SvgPicture.asset(
+            iconAsset,
+            color: AppColors.salmon,
+            width: AppConstants.mediumIconSize,
+            height: AppConstants.mediumIconSize,
+          ),
         ),
       ),
     );

@@ -1,6 +1,7 @@
 import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_text_styles.dart';
 import 'package:customer_support_task/core/widgets/icon_container.dart';
+import 'package:customer_support_task/main.dart';
 import 'package:flutter/material.dart';
 
 class CustomerServiceNavigationContainer extends StatelessWidget {
@@ -35,7 +36,9 @@ class CustomerServiceNavigationContainer extends StatelessWidget {
             ),
             IconContainer(
               onTap: onTap,
-              icon: Icons.keyboard_arrow_right_rounded,
+              icon: isArabicLocale()
+                  ? Icons.keyboard_arrow_left_rounded
+                  : Icons.keyboard_arrow_right_rounded,
             ),
           ],
         ),

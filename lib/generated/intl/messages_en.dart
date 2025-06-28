@@ -59,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Go to the Services section to see status and updates.",
     ),
     "account": MessageLookupByLibrary.simpleMessage("Account"),
+    "call": MessageLookupByLibrary.simpleMessage("Call"),
     "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
     "customerService": MessageLookupByLibrary.simpleMessage("Customer Service"),
     "customerServiceText": MessageLookupByLibrary.simpleMessage(
@@ -69,6 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "generalInformation": MessageLookupByLibrary.simpleMessage(
       "General Information",
     ),
+    "gitHub": MessageLookupByLibrary.simpleMessage("GitHub"),
     "helloIamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
       "Hello! I am here to assist you",
     ),
@@ -82,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "I am here to assist you",
     ),
     "isRequired": MessageLookupByLibrary.simpleMessage("is required"),
+    "linkedIn": MessageLookupByLibrary.simpleMessage("linkedIn"),
     "liveChat": MessageLookupByLibrary.simpleMessage("Live Chat"),
     "profilePicture": MessageLookupByLibrary.simpleMessage("Profile Picture"),
     "profilePictureUpload": MessageLookupByLibrary.simpleMessage(
@@ -117,5 +120,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "uploadYouProfilePicture": MessageLookupByLibrary.simpleMessage(
       "Upload your profile picture",
     ),
+    "whatsapp": MessageLookupByLibrary.simpleMessage("Whatsapp"),
   };
 }

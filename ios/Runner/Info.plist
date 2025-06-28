@@ -50,5 +50,14 @@
 		<string>en</string>
 		<string>ar</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tel</string>
+		<string>mailto</string>
+		<string>sms</string>
+		<string>https</string>
+		<string>http</string>
+	</array>
+
 </dict>
 </plist>
