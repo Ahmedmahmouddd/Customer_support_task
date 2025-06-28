@@ -118,6 +118,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "q9": MessageLookupByLibrary.simpleMessage(
       "كيف أتابع طلب الخدمة الخاص بي؟",
     ),
+    "search": MessageLookupByLibrary.simpleMessage("بحث"),
     "sendAmessage": MessageLookupByLibrary.simpleMessage("أرسل رسالة"),
     "service": MessageLookupByLibrary.simpleMessage("الخدمة"),
     "support": MessageLookupByLibrary.simpleMessage("الدعم"),

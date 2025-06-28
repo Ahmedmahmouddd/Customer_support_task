@@ -49,5 +49,6 @@
     "linkedIn" : "linkedIn",
     "whatsapp" : "Whatsapp",
     "camera" : "Camera",
-    "gallery" : "Gallery"
+    "gallery" : "Gallery",
+    "search" : "search"
 }

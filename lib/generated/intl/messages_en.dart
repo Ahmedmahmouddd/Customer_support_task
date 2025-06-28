@@ -116,6 +116,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "q9": MessageLookupByLibrary.simpleMessage(
       "How do I track my service request?",
     ),
+    "search": MessageLookupByLibrary.simpleMessage("search"),
     "sendAmessage": MessageLookupByLibrary.simpleMessage("Send a message"),
     "service": MessageLookupByLibrary.simpleMessage("Service"),
     "support": MessageLookupByLibrary.simpleMessage("Support"),

@@ -1,5 +1,6 @@
 import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/widgets/custom_appbar.dart';
+import 'package:customer_support_task/core/widgets/custom_search_field.dart';
 import 'package:customer_support_task/generated/l10n.dart';
 import 'package:customer_support_task/modules/help_faq/controllers/help_faqs_controller.dart';
 import 'package:customer_support_task/modules/help_faq/widgets/contact_use_tile.dart';
@@ -21,6 +22,7 @@ class HelpFaqsView extends StatefulWidget {
 class _HelpFaqsViewState extends State<HelpFaqsView> {
   int mainTabsIndex = 0;
   int faqsTabsIndex = 0;
+  TextEditingController searchController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -43,11 +45,21 @@ class _HelpFaqsViewState extends State<HelpFaqsView> {
               faqsTabsIndex: faqsTabsIndex,
               onTabSelected: (index) => setState(() => faqsTabsIndex = index),
             ),
+
+          SizedBox(height: AppConstants.smallPadding),
+          if (mainTabsIndex == 0)
+            SearchField(
+              controller: searchController,
+              onChanged: (String value) {
+                setState(() {});
+              },
+            ),
           SizedBox(height: AppConstants.smallPadding),
           if (mainTabsIndex == 0)
             FAQsContent(
               mainTabsIndex: mainTabsIndex,
               faqsTabsIndex: faqsTabsIndex,
+              searchQuery: searchController.text,
             ),
 
           if (mainTabsIndex == 1)

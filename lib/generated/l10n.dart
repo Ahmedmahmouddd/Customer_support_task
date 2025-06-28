@@ -474,6 +474,11 @@ class S {
   String get gallery {
     return Intl.message('Gallery', name: 'gallery', desc: '', args: []);
   }
+
+  /// `search`
+  String get search {
+    return Intl.message('search', name: 'search', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
