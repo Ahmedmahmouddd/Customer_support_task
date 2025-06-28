@@ -9,5 +9,5 @@ class AppConstants {
   static const double smallIconSize = 20.0;
   static const double extraSmallIconSize = 20.0;
   static const double smallContainerSize = 30.0;
-  static const double extraSmallContainerSize = 26.0;
+  static const double extraSmallContainerSize = 24.0;
 }

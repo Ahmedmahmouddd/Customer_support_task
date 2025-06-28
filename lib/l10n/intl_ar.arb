@@ -1,1 +1,19 @@
-{}
+{
+  "homeMenu": "قائمة الصفحة الرئيسية",
+  "customerService": "خدمة العملاء",
+  "helpFAQ": "المساعدة والأسئلة الشائعة",
+  "contactUs": "اتصل بنا",
+  "liveChat": "الدردشة المباشرة",
+  "iamHereToAssistYou": "أنا هنا لمساعدتك",
+  "helloIamHereToAssistYou": "مرحبًا! أنا هنا لمساعدتك",
+  "sendAmessage": "أرسل رسالة",
+  "isRequired": "مطلوب",
+  "howCanWeHelpYou": "كيف يمكننا مساعدتك؟",
+  "support": "الدعم",
+  "helpCenter": "مركز المساعدة",
+  "generalInformation": "معلومات عامة",
+  "customerServiceText": "هل تحتاج إلى مساعدة بشأن حسابك أو طلباتك أو أي شيء آخر؟ فريق خدمة العملاء لدينا جاهز دائمًا لمساعدتك بسرعة واحترافية.",
+  "profilePictureUpload": "تحميل صورة الملف الشخصي",
+  "profilePicture": "صورة الملف الشخصي",
+  "uploadYouProfilePicture": "قم بتحميل صورة ملفك الشخصي"
+}

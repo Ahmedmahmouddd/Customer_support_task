@@ -2,6 +2,7 @@
     "homeMenu" : "Home Menu",
     "customerService" : "Customer Service",
     "helpFAQ" : "Help & FAQ",
+    "faqs" : "FAQs",
     "contactUs" : "Contact Us",
     "liveChat" : "Live Chat",
     "iamHereToAssistYou" : "I am here to assist you",
@@ -12,5 +13,11 @@
     "support" : "Support",
      "helpCenter" : "Help center",
     "generalInformation" : "General Information",
-    "customerServiceText" : "Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally."
+    "customerServiceText" : "Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally.",
+    "profilePictureUpload": "Profile Picture Upload",
+    "profilePicture": "Profile Picture",
+    "uploadYouProfilePicture" : "Upload your profile picture",
+    "general" : "General",
+    "account" : "Account",
+    "service" : "Service"
 }

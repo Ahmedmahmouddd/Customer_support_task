@@ -3,4 +3,6 @@ class AppRoutes {
   static const customerService = '/customer-service';
   static const helpFaqs = '/help-faqs';
   static const liveChat = '/live-chat';
+  static const profilePictureUpload = '/profile-picture-upload';
+
 }

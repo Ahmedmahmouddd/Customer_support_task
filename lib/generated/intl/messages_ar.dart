@@ -21,5 +21,37 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "contactUs": MessageLookupByLibrary.simpleMessage("اتصل بنا"),
+    "customerService": MessageLookupByLibrary.simpleMessage("خدمة العملاء"),
+    "customerServiceText": MessageLookupByLibrary.simpleMessage(
+      "هل تحتاج إلى مساعدة بشأن حسابك أو طلباتك أو أي شيء آخر؟ فريق خدمة العملاء لدينا جاهز دائمًا لمساعدتك بسرعة واحترافية.",
+    ),
+    "generalInformation": MessageLookupByLibrary.simpleMessage("معلومات عامة"),
+    "helloIamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
+      "مرحبًا! أنا هنا لمساعدتك",
+    ),
+    "helpCenter": MessageLookupByLibrary.simpleMessage("مركز المساعدة"),
+    "helpFAQ": MessageLookupByLibrary.simpleMessage(
+      "المساعدة والأسئلة الشائعة",
+    ),
+    "homeMenu": MessageLookupByLibrary.simpleMessage("قائمة الصفحة الرئيسية"),
+    "howCanWeHelpYou": MessageLookupByLibrary.simpleMessage(
+      "كيف يمكننا مساعدتك؟",
+    ),
+    "iamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
+      "أنا هنا لمساعدتك",
+    ),
+    "isRequired": MessageLookupByLibrary.simpleMessage("مطلوب"),
+    "liveChat": MessageLookupByLibrary.simpleMessage("الدردشة المباشرة"),
+    "profilePicture": MessageLookupByLibrary.simpleMessage("صورة الملف الشخصي"),
+    "profilePictureUpload": MessageLookupByLibrary.simpleMessage(
+      "تحميل صورة الملف الشخصي",
+    ),
+    "sendAmessage": MessageLookupByLibrary.simpleMessage("أرسل رسالة"),
+    "support": MessageLookupByLibrary.simpleMessage("الدعم"),
+    "uploadYouProfilePicture": MessageLookupByLibrary.simpleMessage(
+      "قم بتحميل صورة ملفك الشخصي",
+    ),
+  };
 }

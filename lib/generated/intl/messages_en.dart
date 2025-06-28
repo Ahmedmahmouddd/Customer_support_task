@@ -22,11 +22,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "account": MessageLookupByLibrary.simpleMessage("Account"),
     "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
     "customerService": MessageLookupByLibrary.simpleMessage("Customer Service"),
     "customerServiceText": MessageLookupByLibrary.simpleMessage(
       "Need assistance with your account, orders, or anything else? Our customer service team is always ready to help you out promptly and professionally.",
     ),
+    "faqs": MessageLookupByLibrary.simpleMessage("FAQs"),
+    "general": MessageLookupByLibrary.simpleMessage("General"),
     "generalInformation": MessageLookupByLibrary.simpleMessage(
       "General Information",
     ),
@@ -44,7 +47,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "isRequired": MessageLookupByLibrary.simpleMessage("is required"),
     "liveChat": MessageLookupByLibrary.simpleMessage("Live Chat"),
+    "profilePicture": MessageLookupByLibrary.simpleMessage("Profile Picture"),
+    "profilePictureUpload": MessageLookupByLibrary.simpleMessage(
+      "Profile Picture Upload",
+    ),
     "sendAmessage": MessageLookupByLibrary.simpleMessage("Send a message"),
+    "service": MessageLookupByLibrary.simpleMessage("Service"),
     "support": MessageLookupByLibrary.simpleMessage("Support"),
+    "uploadYouProfilePicture": MessageLookupByLibrary.simpleMessage(
+      "Upload your profile picture",
+    ),
   };
 }

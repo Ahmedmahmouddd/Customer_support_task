@@ -75,6 +75,11 @@ class S {
     return Intl.message('Help & FAQ', name: 'helpFAQ', desc: '', args: []);
   }
 
+  /// `FAQs`
+  String get faqs {
+    return Intl.message('FAQs', name: 'faqs', desc: '', args: []);
+  }
+
   /// `Contact Us`
   String get contactUs {
     return Intl.message('Contact Us', name: 'contactUs', desc: '', args: []);
@@ -158,6 +163,51 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `Profile Picture Upload`
+  String get profilePictureUpload {
+    return Intl.message(
+      'Profile Picture Upload',
+      name: 'profilePictureUpload',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile Picture`
+  String get profilePicture {
+    return Intl.message(
+      'Profile Picture',
+      name: 'profilePicture',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upload your profile picture`
+  String get uploadYouProfilePicture {
+    return Intl.message(
+      'Upload your profile picture',
+      name: 'uploadYouProfilePicture',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General`
+  String get general {
+    return Intl.message('General', name: 'general', desc: '', args: []);
+  }
+
+  /// `Account`
+  String get account {
+    return Intl.message('Account', name: 'account', desc: '', args: []);
+  }
+
+  /// `Service`
+  String get service {
+    return Intl.message('Service', name: 'service', desc: '', args: []);
   }
 }
 

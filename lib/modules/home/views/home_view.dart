@@ -19,6 +19,10 @@ class HomeView extends StatelessWidget {
       ),
       HomeMenuItem(label: S.of(context).helpFAQ, route: AppRoutes.helpFaqs),
       HomeMenuItem(label: S.of(context).liveChat, route: AppRoutes.liveChat),
+      HomeMenuItem(
+        label: S.of(context).profilePictureUpload,
+        route: AppRoutes.profilePictureUpload,
+      ),
     ];
 
     return Scaffold(

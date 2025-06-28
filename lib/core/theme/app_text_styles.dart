@@ -23,6 +23,27 @@ class AppTextStyles {
     color: AppColors.terracotta,
   );
 
+  static const terracottaSemiBoldBody = TextStyle(
+    fontSize: 14,
+    fontFamily: 'poppins',
+    fontWeight: FontWeight.w600,
+    color: AppColors.terracotta,
+  );
+
+  static const salmonBoldSubheading = TextStyle(
+    fontSize: 16,
+    fontFamily: 'poppins',
+    fontWeight: FontWeight.w600,
+    color: AppColors.salmon,
+  );
+
+  static const beigeSemiBoldBody = TextStyle(
+    fontSize: 14,
+    fontFamily: 'poppins',
+    fontWeight: FontWeight.w600,
+    color: AppColors.beigeText,
+  );
+
   static const blackBody = TextStyle(
     fontSize: 14,
     fontFamily: 'poppins',

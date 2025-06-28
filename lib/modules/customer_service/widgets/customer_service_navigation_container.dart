@@ -44,8 +44,8 @@ class CustomerServiceNavigationContainer extends StatelessWidget {
                   color: AppColors.salmon,
                 ),
                 child: Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: AppConstants.extraSmallIconSize,
+                  Icons.keyboard_arrow_right_rounded,
+                  size: AppConstants.smallIconSize,
                   color: AppColors.white,
                 ),
               ),

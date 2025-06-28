@@ -32,6 +32,7 @@ class CustomerSupportApp extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       initialRoute: AppRoutes.home,
       getPages: AppPages.routes,
+      locale: const Locale('en'),
     );
   }
 }
