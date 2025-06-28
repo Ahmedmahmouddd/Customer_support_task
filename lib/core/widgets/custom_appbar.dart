@@ -17,13 +17,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   });
 
   @override
-  Size get preferredSize => const Size.fromHeight(85);
+  Size get preferredSize => const Size.fromHeight(88);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.white,
       child: Column(
+        mainAxisSize: MainAxisSize.min, // <-- Make it flexible
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           AppBar(
@@ -40,7 +41,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             centerTitle: true,
             title: Text(title, style: AppTextStyles.salmonHeading),
           ),
-          Text(subtitle, style: AppTextStyles.blackSubheading),
+          Expanded(child: Text(subtitle, style: AppTextStyles.blackSubheading)),
           const SizedBox(height: 4),
           CustomDivider(),
         ],

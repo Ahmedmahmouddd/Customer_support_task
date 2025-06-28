@@ -1,18 +1,16 @@
-import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:customer_support_task/core/theme/app_text_styles.dart';
 import 'package:customer_support_task/generated/l10n.dart';
 import 'package:customer_support_task/modules/home/models/home_menu_item.dart';
+import 'package:customer_support_task/modules/home/widgets/home_container.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../../../routes/app_routes.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    final items = [
+  List<HomeMenuItem> getMenuItems(BuildContext context) {
+    return [
       HomeMenuItem(label: S.of(context).helpFAQ, route: AppRoutes.helpFaqs),
       HomeMenuItem(
         label: S.of(context).customerService,
@@ -24,9 +22,15 @@ class HomeView extends StatelessWidget {
         route: AppRoutes.profilePictureUpload,
       ),
     ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final items = getMenuItems(context);
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(S.of(context).homeMenu, style: AppTextStyles.salmonHeading),
       ),
       body: Padding(
@@ -38,24 +42,7 @@ class HomeView extends StatelessWidget {
           crossAxisSpacing: AppConstants.horizontalPadding,
           mainAxisSpacing: AppConstants.horizontalPadding,
           children: items.map((item) {
-            return GestureDetector(
-              onTap: () => Get.toNamed(item.route),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: AppColors.salmon,
-                  borderRadius: BorderRadius.circular(
-                    AppConstants.largePadding,
-                  ),
-                ),
-                child: Center(
-                  child: Text(
-                    item.label,
-                    style: AppTextStyles.terracottaSubheading,
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
-            );
+            return HomeContainer(item: item);
           }).toList(),
         ),
       ),

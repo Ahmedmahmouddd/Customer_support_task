@@ -36,7 +36,6 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  flutter_phone_direct_caller: ^2.2.1
   flutter_svg: ^2.2.0
   get: ^4.7.2
   intl_utils: ^2.8.10

@@ -8,7 +8,6 @@ import 'package:customer_support_task/modules/help_faq/widgets/help_screen_top_t
 import 'package:customer_support_task/modules/help_faq/widgets/faqs_tabs.dart';
 import 'package:customer_support_task/routes/app_routes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -25,6 +24,8 @@ class _HelpFaqsViewState extends State<HelpFaqsView> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<ExternalLinksController>();
+
     return Scaffold(
       appBar: CustomAppBar(
         title: S.of(context).helpFAQ,
@@ -54,34 +55,27 @@ class _HelpFaqsViewState extends State<HelpFaqsView> {
               child: ListView(
                 children: [
                   ContactUsTile(
-                    onTap: () {
-                      Get.toNamed(AppRoutes.customerService);
-                    },
+                    onTap: () => Get.toNamed(AppRoutes.customerService),
                     title: S.of(context).customerService,
                     image: "assets/icons/customer_service.svg",
                   ),
                   ContactUsTile(
-                    onTap: () async {
-                      await FlutterPhoneDirectCaller.callNumber(
-                        "+201017094431",
-                      );
-                      await launch('tel://+201017094431');
-                    },
+                    onTap: () async => await launch('tel://+201017094431'),
                     title: "${S.of(context).call} -android only- ",
                     image: "assets/icons/call.svg",
                   ),
                   ContactUsTile(
-                    onTap: launchLinkedIn,
+                    onTap: controller.launchLinkedIn,
                     title: S.of(context).linkedIn,
                     image: "assets/icons/linkedin.svg",
                   ),
                   ContactUsTile(
-                    onTap: launchGitHub,
+                    onTap: controller.launchGitHub,
                     title: S.of(context).gitHub,
                     image: "assets/icons/github.svg",
                   ),
                   ContactUsTile(
-                    onTap: launchWhatsApp,
+                    onTap: controller.launchWhatsApp,
                     title: S.of(context).whatsapp,
                     image: "assets/icons/whatsapp.svg",
                   ),
