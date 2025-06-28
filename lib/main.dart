@@ -7,6 +7,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,4 +36,8 @@ class CustomerSupportApp extends StatelessWidget {
       locale: const Locale('en'),
     );
   }
+}
+
+bool isArabicLocale() {
+  return Intl.getCurrentLocale().toLowerCase().startsWith('ar');
 }

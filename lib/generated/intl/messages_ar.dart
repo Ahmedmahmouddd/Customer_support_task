@@ -22,11 +22,50 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "contactUs": MessageLookupByLibrary.simpleMessage("اتصل بنا"),
+    "a1": MessageLookupByLibrary.simpleMessage(
+      "هذا التطبيق يساعدك على التواصل مع دعم العملاء بسرعة وسهولة.",
+    ),
+    "a10": MessageLookupByLibrary.simpleMessage(
+      "نعم، يمكنك إلغاؤه من صفحة تفاصيل الطلب.",
+    ),
+    "a11": MessageLookupByLibrary.simpleMessage(
+      "ندعم المساعدة في الحساب، والدعم الفني، واستفسارات الطلبات.",
+    ),
+    "a12": MessageLookupByLibrary.simpleMessage(
+      "عادةً خلال بضع دقائق عبر الدردشة، أو حتى 24 ساعة عبر البريد الإلكتروني.",
+    ),
+    "a2": MessageLookupByLibrary.simpleMessage(
+      "يمكنك استخدام الدردشة المباشرة أو إرسال رسالة من خلال قسم تواصل معنا.",
+    ),
+    "a3": MessageLookupByLibrary.simpleMessage(
+      "نعم، فريق الدعم لدينا متاح على مدار 24 ساعة.",
+    ),
+    "a4": MessageLookupByLibrary.simpleMessage(
+      "لا، يمكنك الوصول إلى المساعدة العامة دون تسجيل الدخول.",
+    ),
+    "a5": MessageLookupByLibrary.simpleMessage(
+      "اذهب إلى الإعدادات > الحساب > إعادة تعيين كلمة المرور واتبع التعليمات.",
+    ),
+    "a6": MessageLookupByLibrary.simpleMessage(
+      "انتقل إلى ملفك الشخصي واضغط على تعديل لتحديث المعلومات.",
+    ),
+    "a7": MessageLookupByLibrary.simpleMessage(
+      "نعم، يمكنك تحديثه من إعدادات الحساب.",
+    ),
+    "a8": MessageLookupByLibrary.simpleMessage(
+      "يرجى التواصل مع الدعم لطلب حذف الحساب.",
+    ),
+    "a9": MessageLookupByLibrary.simpleMessage(
+      "اذهب إلى قسم الخدمات للاطلاع على الحالة والتحديثات.",
+    ),
+    "account": MessageLookupByLibrary.simpleMessage("الحساب"),
+    "contactUs": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
     "customerService": MessageLookupByLibrary.simpleMessage("خدمة العملاء"),
     "customerServiceText": MessageLookupByLibrary.simpleMessage(
-      "هل تحتاج إلى مساعدة بشأن حسابك أو طلباتك أو أي شيء آخر؟ فريق خدمة العملاء لدينا جاهز دائمًا لمساعدتك بسرعة واحترافية.",
+      "تحتاج إلى مساعدة في حسابك أو الطلبات أو أي شيء آخر؟ فريق خدمة العملاء لدينا دائمًا جاهز لمساعدتك بسرعة واحترافية.",
     ),
+    "faqs": MessageLookupByLibrary.simpleMessage("الأسئلة الشائعة"),
+    "general": MessageLookupByLibrary.simpleMessage("عام"),
     "generalInformation": MessageLookupByLibrary.simpleMessage("معلومات عامة"),
     "helloIamHereToAssistYou": MessageLookupByLibrary.simpleMessage(
       "مرحبًا! أنا هنا لمساعدتك",
@@ -35,7 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "helpFAQ": MessageLookupByLibrary.simpleMessage(
       "المساعدة والأسئلة الشائعة",
     ),
-    "homeMenu": MessageLookupByLibrary.simpleMessage("قائمة الصفحة الرئيسية"),
+    "homeMenu": MessageLookupByLibrary.simpleMessage("القائمة الرئيسية"),
     "howCanWeHelpYou": MessageLookupByLibrary.simpleMessage(
       "كيف يمكننا مساعدتك؟",
     ),
@@ -46,12 +85,39 @@ class MessageLookup extends MessageLookupByLibrary {
     "liveChat": MessageLookupByLibrary.simpleMessage("الدردشة المباشرة"),
     "profilePicture": MessageLookupByLibrary.simpleMessage("صورة الملف الشخصي"),
     "profilePictureUpload": MessageLookupByLibrary.simpleMessage(
-      "تحميل صورة الملف الشخصي",
+      "رفع صورة الملف الشخصي",
+    ),
+    "q1": MessageLookupByLibrary.simpleMessage("ما هو هذا التطبيق؟"),
+    "q10": MessageLookupByLibrary.simpleMessage(
+      "هل يمكنني إلغاء الطلب بعد إرساله؟",
+    ),
+    "q11": MessageLookupByLibrary.simpleMessage(
+      "ما هي أنواع الخدمات المتوفرة؟",
+    ),
+    "q12": MessageLookupByLibrary.simpleMessage(
+      "كم من الوقت يستغرق الحصول على رد؟",
+    ),
+    "q2": MessageLookupByLibrary.simpleMessage("كيف يمكنني التواصل مع الدعم؟"),
+    "q3": MessageLookupByLibrary.simpleMessage(
+      "هل الدعم متاح على مدار الساعة؟",
+    ),
+    "q4": MessageLookupByLibrary.simpleMessage(
+      "هل أحتاج إلى حساب لاستخدام الدعم؟",
+    ),
+    "q5": MessageLookupByLibrary.simpleMessage("كيف أعيد تعيين كلمة المرور؟"),
+    "q6": MessageLookupByLibrary.simpleMessage("كيف أُحدّث ملفي الشخصي؟"),
+    "q7": MessageLookupByLibrary.simpleMessage(
+      "هل يمكنني تغيير بريدي الإلكتروني؟",
+    ),
+    "q8": MessageLookupByLibrary.simpleMessage("كيف يمكنني حذف حسابي؟"),
+    "q9": MessageLookupByLibrary.simpleMessage(
+      "كيف أتابع طلب الخدمة الخاص بي؟",
     ),
     "sendAmessage": MessageLookupByLibrary.simpleMessage("أرسل رسالة"),
+    "service": MessageLookupByLibrary.simpleMessage("الخدمة"),
     "support": MessageLookupByLibrary.simpleMessage("الدعم"),
     "uploadYouProfilePicture": MessageLookupByLibrary.simpleMessage(
-      "قم بتحميل صورة ملفك الشخصي",
+      "قم برفع صورة ملفك الشخصي",
     ),
   };
 }

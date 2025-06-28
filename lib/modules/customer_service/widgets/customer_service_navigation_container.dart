@@ -1,6 +1,6 @@
 import 'package:customer_support_task/core/constants/app_constants.dart';
-import 'package:customer_support_task/core/theme/app_colors.dart';
 import 'package:customer_support_task/core/theme/app_text_styles.dart';
+import 'package:customer_support_task/core/widgets/icon_container.dart';
 import 'package:flutter/material.dart';
 
 class CustomerServiceNavigationContainer extends StatelessWidget {
@@ -33,22 +33,9 @@ class CustomerServiceNavigationContainer extends StatelessWidget {
                 Text(subTitle, style: AppTextStyles.greyBody),
               ],
             ),
-            InkWell(
-              borderRadius: BorderRadius.circular(50),
+            IconContainer(
               onTap: onTap,
-              child: Container(
-                width: AppConstants.extraSmallContainerSize,
-                height: AppConstants.extraSmallContainerSize,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColors.salmon,
-                ),
-                child: Icon(
-                  Icons.keyboard_arrow_right_rounded,
-                  size: AppConstants.smallIconSize,
-                  color: AppColors.white,
-                ),
-              ),
+              icon: Icons.keyboard_arrow_right_rounded,
             ),
           ],
         ),

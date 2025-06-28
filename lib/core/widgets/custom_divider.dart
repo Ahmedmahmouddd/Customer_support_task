@@ -3,15 +3,17 @@ import 'package:customer_support_task/core/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomDivider extends StatelessWidget {
-  const CustomDivider({super.key});
+  const CustomDivider({super.key, this.indent});
+
+  final double? indent;
 
   @override
   Widget build(BuildContext context) {
-    return const Divider(
+    return Divider(
       height: 1,
-      indent: AppConstants.horizontalPadding,
-      endIndent: AppConstants.horizontalPadding,
-      color: AppColors.salmon,
+      indent: indent ?? AppConstants.horizontalPadding,
+      endIndent: indent ?? AppConstants.horizontalPadding,
+      color: AppColors.brownRosy,
     );
   }
 }

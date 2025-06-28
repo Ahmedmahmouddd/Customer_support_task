@@ -13,11 +13,11 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = [
+      HomeMenuItem(label: S.of(context).helpFAQ, route: AppRoutes.helpFaqs),
       HomeMenuItem(
         label: S.of(context).customerService,
         route: AppRoutes.customerService,
       ),
-      HomeMenuItem(label: S.of(context).helpFAQ, route: AppRoutes.helpFaqs),
       HomeMenuItem(label: S.of(context).liveChat, route: AppRoutes.liveChat),
       HomeMenuItem(
         label: S.of(context).profilePictureUpload,
