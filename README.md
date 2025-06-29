@@ -4,15 +4,13 @@ A Flutter-based mobile application designed to simulate real-world customer supp
 
 
 📸 Screenshots of the App
-
-| *Screen*            |*Screenshot*                                    |
-|-----------------------|------------------------------------|
-| *Home Screen*        |   ![home](https://github.com/user-attachments/assets/0194a51e-0cc4-441e-8eb1-3507746e1fb4)|
-| *Chat Screen*        | ![live_chat](https://github.com/user-attachments/assets/5c75936b-4920-424b-a80f-7333b55db1e1) |
-| *Profile Screen*     |![profile_picture](https://github.com/user-attachments/assets/dfe6adba-402c-4db0-916d-0d9cf7280a86)|
-| *FAQs Screen*    | ![FAQs](https://github.com/user-attachments/assets/1f3b2641-0e7f-42de-923b-f5353a8e833f)|
-| *Contact Us Screen*   |![contact_us](https://github.com/user-attachments/assets/696ff959-e40a-4600-9a0f-a225a7d8db4c) |
-
+| **Screen**            | **Screenshot**                                                                 |
+|-----------------------|-------------------------------------------------------------------------------|
+| **Home Screen**       | <img src="https://github.com/user-attachments/assets/0194a51e-0cc4-441e-8eb1-3507746e1fb4" width="200"/> |
+| **Chat Screen**       | <img src="https://github.com/user-attachments/assets/5c75936b-4920-424b-a80f-7333b55db1e1" width="200"/> |
+| **Profile Screen**    | <img src="https://github.com/user-attachments/assets/dfe6adba-402c-4db0-916d-0d9cf7280a86" width="200"/> |
+| **FAQs Screen**       | <img src="https://github.com/user-attachments/assets/1f3b2641-0e7f-42de-923b-f5353a8e833f" width="200"/> |
+| **Contact Us Screen** | <img src="https://github.com/user-attachments/assets/696ff959-e40a-4600-9a0f-a225a7d8db4c" width="200"/> |
 
 
 
