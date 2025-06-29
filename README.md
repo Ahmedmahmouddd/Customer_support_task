@@ -1,4 +1,4 @@
-![contact_us](https://github.com/user-attachments/assets/f378cf65-b3e1-42cb-b0a9-cd0fef023b8d)💬 Customer Support App
+💬 Customer Support App
 
 A Flutter-based mobile application designed to simulate real-world customer support interactions. The app allows users to browse FAQs, contact support via chat, and upload a profile picture. It supports localization, real-time messaging with Firebase, and modern UI principles.
 
@@ -7,11 +7,11 @@ A Flutter-based mobile application designed to simulate real-world customer supp
 
 | *Screen*            |*Screenshot*                                    |
 |-----------------------|------------------------------------|
-| *Home Screen*        |<img src="screenshot/home.png" width="170"/>     |
-| *Chat Screen*        | <img src="screenshot/live_chat.png" width="170"/>     |
-| *Profile Screen*     |<img src="screenshot/profile_picture.png" width="170"/> |
-| *FAQs Screen*    | <img src="screenshot/FAQs.png" width="170"/> |
-| *Contact Us Screen*   |<img src="screenshot/contact_us.png" width="170"/> |
+| *Home Screen*        |   ![home](https://github.com/user-attachments/assets/0194a51e-0cc4-441e-8eb1-3507746e1fb4)|
+| *Chat Screen*        | ![live_chat](https://github.com/user-attachments/assets/5c75936b-4920-424b-a80f-7333b55db1e1) |
+| *Profile Screen*     |![profile_picture](https://github.com/user-attachments/assets/dfe6adba-402c-4db0-916d-0d9cf7280a86)|
+| *FAQs Screen*    | ![FAQs](https://github.com/user-attachments/assets/1f3b2641-0e7f-42de-923b-f5353a8e833f)|
+| *Contact Us Screen*   |![contact_us](https://github.com/user-attachments/assets/696ff959-e40a-4600-9a0f-a225a7d8db4c) |
 
 
 
