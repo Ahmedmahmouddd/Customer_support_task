@@ -73,7 +73,7 @@ class _HelpFaqsViewState extends State<HelpFaqsView> {
                   ),
                   ContactUsTile(
                     onTap: () async => await launch('tel://+201017094431'),
-                    title: "${S.of(context).call} -android only- ",
+                    title: S.of(context).call,
                     image: "assets/icons/call.svg",
                   ),
                   ContactUsTile(
